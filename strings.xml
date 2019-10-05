@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">spinnerexample</string>
+
+
+    <string-array name ="reasons">
+        <item>ONE</item>
+        <item>TWO</item>
+        <item>THREE</item>
+        <item>FOUR</item>
+        <item>five</item>
+
+
+    </string-array>
+</resources>
