@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout1">
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textview21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="FEEDBACK"
+            android:textColor=" #ffffff"
+            android:textSize="27dp"
+            android:textStyle="bold" />
+    </LinearLayout></RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativelayout2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="-46dp"
+        android:layout_alignBottom="@+id/relativelayout1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="3">
+        <TextView
+            android:textColor="#000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textview87"
+            android:text="Complaint form"
+            android:textSize="36sp"
+            android:layout_weight="1"/>
+
+    </LinearLayout></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout3"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="-56dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativelayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <EditText
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edittext"
+                android:text="Select Reason"/></LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativelayout4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="-43dp"
+        android:layout_alignBottom="@id/relativelayout3">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/linearlayout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Spinner
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinnername"
+                android:spinnerMode="dropdown"
+                android:background="@android:drawable/spinner_dropdown_background"/></LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/relativelayout5"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="-60dp"
+        android:layout_alignBottom="@id/relativelayout4">
+
+
+        <LinearLayout
+            android:id="@+id/linearlayout7"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phno"
+                android:text="please enter phone no"/></LinearLayout></RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relativelayout6"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="-60dp"
+        android:layout_alignBottom="@+id/relativelayout5">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearlayout8">
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:text="please enter email id"/>
+
+        </LinearLayout></RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relatvielayout6"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+       android:layout_alignBottom="@id/relativelayout5"
+        android:layout_marginBottom="-116dp" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Description"/></LinearLayout></RelativeLayout>
+    <RelativeLayout
+        android:layout_alignBottom="@id/relativelayout6"
+        android:layout_marginBottom="-250dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orienatation="horizonatl">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:gravity="top"
+                android:id="@+id/write"
+                android:text="write your desription here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:inputType="textMultiLine"
+                android:lines ="8"/>
+        </LinearLayout></RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/relativelayout7"
+        android:layout_marginBottom="-350dp"
+        android:layout_alignBottom="@id/relativelayout6"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:onClick="@+id/btnshowsaved"
+                android:id="@+id/btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUBMIT"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout8"
+        android:layout_alignBottom="@+id/relativelayout7"
+        android:layout_marginBottom="-45dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/text" />
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
